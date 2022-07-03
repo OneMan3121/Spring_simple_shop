@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns:th="http://www.thymeleaf.org" dir="ltr">
+<head>
+	<title th:text="${title}"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="../css/style.css" th:href="@{/css/style.css}" type="text/css" media="all" />
+	<link rel="stylesheet" href="../css/jquery.jcarousel.css" th:href="@{/css/jquery.jcarousel.css}" type="text/css" media="all" />
+	<link rel="shortcut icon" type="image/x-icon"  href="../css/images/favicon.ico" th:href="@{/css/images/favicon.ico}"/>
+	<script type="text/javascript" src="../js/jquery-1.4.2.min.js" th:href="@{/js/jquery-1.4.2.min.js}"></script>
+	<script type="text/javascript" src="../js/jquery.jcarousel.pack.js" th:href="@{/js/jquery.jcarousel.pack.js}"></script>
+	<script type="text/javascript" src="../js/func.js" th:href="@{/js/func.js}"></script>
+</head>
+<body>
+<div id="wrapper">
+
+<header th:insert="blocks/header :: #header"></header>
+
+
+
+<div id="main">
+	<div class="shell">
+		<div id="content" class="left">
+			<h2>About Us</h2>
+
+			<p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum dummy text was popularized in the 1960s.
+				•	Lorem Ipsum is a dummy text of the printing and typesetting industry
+				•	Lorem Ipsum has been the standard dummy text in 1500s
+				•	The dummy text has It has survived for five centuries
+			</p>
+		</div>
+
+		<div class="cl">&nbsp;</div>
+		<div class="boxes">
+			<div class="box-white left">
+				<img src="../css/images/who01.jfif" th:href="@{/css/images/who01.jfif}" alt=""/>
+				<h2>Who We Are?</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+			</div>
+			<div class="box-white left">
+				<img src="../css/images/cube01.png" th:href="@{/css/images/cube01.png}" alt="" />
+				<h2>What We Do?</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+			</div>
+			<div class="box-white box-white-last left">
+				<img src="../css/images/clock3.gif" th:href="@{/css/images/clock3.gif}" alt="" />
+				<h2>Our Work</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+			</div>
+			<div class="cl">&nbsp;</div>
+		</div>
+
+
+
+		<p class="quote">If you want to achieve greatness, stop asking for permission - <span>John Doe</span></p>
+	</div>
+</div>
+<div id="footer-push">&nbsp;</div>
+</div>
+
+<footer th:insert="blocks/footer :: #footer"></footer>
+</body>
+</html>
